@@ -45,6 +45,7 @@ jobs:
         else
           export enable_ccache=on
         fi
+        set(CMAKE_MACOSX_RPATH 1)
         curl -L https://github.com/blueloveTH/aseprite/releases/download/v0.01/skia.zip --output skia.zip
         7z x skia.zip
         cmake -S . -B build -G Ninja \
