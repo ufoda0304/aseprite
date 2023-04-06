@@ -65,4 +65,7 @@ jobs:
         cd build && ninja
     - uses: actions/upload-artifact@v3
       with:
-        path: world.dmg
+        name: aseprite
+        path: |
+          D:/a/aseprite/aseprite/build/bin/data
+          D:/a/aseprite/aseprite/build/bin/aseprite.dmg
